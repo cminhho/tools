@@ -18,10 +18,15 @@
 		<select class="form-control" name="templates" ng-model="template" ng-change="loadTemplate()">
 		  <option value="" selected>Template</option>
 		  <option value="http://www.w3schools.com/">W3schools</option>
+		  <option value="http://getbootstrap.com/">Bootstrap</option>
 		  <option value="http://jsbeautifier.org/">Online JavaScript beautifier</option>
 		  <option value="https://cdnjs.com/">Google CDN </option>
 		  <option value="tools/css_minifier_online/index.html">CSS Minifier Online</option>
 		  <option value="http://www.webtoolkitonline.com/">Web Toolkit Online</option>
+		  <option value="https://www.google.com/fonts">Google Font</option>
+		  <option value="http://subtlepatterns.com/">Subtle Patterns | Free textures for your next web project.</option>
+		  <option value="http://codepen.io/">CodePen</option>
+		  <option value="https://placeit.net">PlaceIt</option>
 		</select>
 	  </div>
 	  <iframe id="iframe" data-ng-src="{{activeTemplate}}"></iframe>
