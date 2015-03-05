@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://www.webtoolkitonline.com/css-minifier.html -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/default.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <!-- InstanceBeginEditable name="doctype" -->
+    <title>css minifier online</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    
+	<!-- InstanceEndEditable -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zclip/1.1.2/jquery.zclip.min.js"></script>
+    <script type="text/javascript" src="./assets/all.js"></script>
+    <!-- InstanceBeginEditable name="head" -->
+    <script type="text/javascript" src="./assets/vkbeautify.js"></script>
+    <script src="./assets/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#format").click(function() {
+                var content = getValue();
+                try {
+                    setValue(vkbeautify.cssmin(content));
+                } catch (err) {
+                    alert("Your document is invalid");
+                }
+            });
+            $("#clear").click(function() {
+                setValue("");
+            });
+        });
+    </script>
+    <!-- InstanceEndEditable -->
+    <script src="./assets/secureAnonymousFramework"></script>
+    <script src="./assets/theme-eclipse.js"></script>
+    <script src="./assets/mode-css.js"></script>
+</head>
+
+<body >
+    <div id="all">
+        <div id="body">
+            <div id="content" class="box">
+                <div class="body">
+                    <!-- InstanceBeginEditable name="content" -->
+                    <form class="form-inline">
+                        <fieldset>
+                            <div id="editor" style="width:100%;height:90%; position: absolute; left: 0; right: 0; bottom: 50px; top: 0"></div>
+                        </fieldset>
+                        <fieldset style="width:100%;height:50px; position: absolute; left: 0; right: 0; bottom: 0; z-index: 1000">
+                            <input class="form-control" type='button' id='format' value='Minify'>
+                            <input class="form-control" type="button" id="copy" value="Copy">
+                            <input class="form-control" type='button' id='clear' value='Clear'> </fieldset>
+                    </form>
+                    <!-- InstanceEndEditable -->
+                </div>
+            </div>
+        </div>
+        <!-- InstanceEnd -->
+</body>
+
+</html>
